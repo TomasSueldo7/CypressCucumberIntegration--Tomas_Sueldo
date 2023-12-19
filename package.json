@@ -1,0 +1,27 @@
+{
+  "name": "cypress-cucumber-boilerplate",
+  "version": "2.2.0",
+  "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:runner": "cypress open --e2e --browser chrome",
+    "cypress:execution": "cypress run --spec cypress/e2e/features/**/*.feature --browser chrome --config baseUrl=https://practicetestautomation.com/practice-test-login/"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Tomas Sueldo",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@cypress/xpath": "^2.0.3",
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.6.0",
+    "cypress-cucumber-preprocessor": "4.3.1",
+    "cypress-plugin-api": "^2.11.1",
+    "esbuild": "^0.16.4",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  }
+}
+
